@@ -300,7 +300,7 @@ echo -e "${GREEN}${CHECKMARK} Step completed successfully!${NC}"
 # Step 7: Sync Node and Get Apprentice Role
 print_header "Step 7: Sync Node and Earn Apprentice Role"
 echo -e "${BLUE}${STAR} Your node is syncing. This may take a few minutes...${NC}"
-echo -e "${YELLOW}Wait at least 10-20 minutes for the node to sync before proceeding.${NC}"
+echo -e "${YELLOW}${STAR} IMPORTANT: Wait at least 10-20 minutes for the node to sync before proceeding. Don't forget to earn the Apprentice role!${NC}"
 echo -e "${PURPLE}Navigate to the 'operators | start-here' channel in the Aztec Discord Server.${NC}"
 echo -e "To earn the Apprentice role, follow these steps after syncing:"
 echo -e "\n${BLUE}1. Get the block number:${NC}"
@@ -313,10 +313,10 @@ echo -e "\n${BLUE}3. In the Discord 'operators | start-here' channel, run:${NC}"
 echo -e "${YELLOW}/operator start${NC}"
 echo -e "${PURPLE}Provide your public address (${PUBLIC_ADDRESS}), block number, and proof when prompted.${NC}"
 echo -e "${GREEN}${CHECKMARK} You should receive the Apprentice role instantly!${NC}"
-echo -e "${YELLOW}Have you earned the Apprentice role in Discord? (y/n):${NC}"
+echo -e "${YELLOW}${STAR} Don't skip this step! Have you earned the Apprentice role in Discord? (y/n):${NC}"
 read -r response
 if [[ "$response" != "y" && "$response" != "Y" ]]; then
-    echo -e "${RED}${CROSS} Please follow the Discord instructions and try again.${NC}"
+    echo -e "${RED}${CROSS} Please follow the Discord instructions and earn the Apprentice role before proceeding.${NC}"
     exit 1
 fi
 echo -e "${GREEN}${CHECKMARK} Congrats on earning the Apprentice role!${NC}"
