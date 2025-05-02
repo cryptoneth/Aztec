@@ -58,6 +58,14 @@ Step 4: Enter Sepolia Ethereum RPC, Beacon RPC, Ethereum private key, public add
 
 Step 7: Confirm earning the Apprentice role on Discord.
 
+you can see your node running
+
+``bash
+screen -x aztec
+``
+
+Press Crtl + A + D to quit
+
 Get Role
 Go to the discord channel :[operators| start-here](https://discord.com/invite/aztec) and follow the prompts, You can continue the guide with my commands if you need help.
 
