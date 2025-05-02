@@ -60,9 +60,9 @@ Step 7: Confirm earning the Apprentice role on Discord.
 
 you can see your node running
 
-``bash
+```bash
 screen -x aztec
-``
+```
 
 Press Crtl + A + D to quit
 
