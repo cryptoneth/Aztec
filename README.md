@@ -54,7 +54,6 @@ this script automates setting up an Aztec Sequencer Node on the testnet, guiding
 
 Step 1 - 3: ... !
 
-
 Step 4: Enter Sepolia Ethereum RPC, Beacon RPC, Ethereum private key, public address (with 2.5 Sepolia ETH), and server IP.
 
 Step 7: Confirm earning the Apprentice role on Discord.
@@ -90,9 +89,7 @@ http://localhost:8080 | jq -r ".result"
 
 Then you'll get your `Apprentice` Role
 
-![image](https://github.com/user-attachments/assets/2ae9ff7c-59ba-43ec-9a23-76ef8ccb997c)
-
-## 12. Register Validator
+## Register Validator
 ```bash
 aztec add-l1-validator \
   --l1-rpc-urls RPC_URL \
@@ -107,9 +104,6 @@ Replace `RPC_URL`, `your-validator-address` & 2x `your-validator-address`, then 
 ---
 
 # Error: `ERROR: world-state:block_stream Error processing block stream: Error: Obtained L1 to L2 messages failed to be hashed to the block inHash`
-No strong solution for this yet, but you can do the following things
-
-![image](https://github.com/user-attachments/assets/d332fe2b-c370-4855-8682-24a11091887d)
 
 * Stop node with Ctrl+C.
 * Delete node data:
