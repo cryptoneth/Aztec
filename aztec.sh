@@ -321,8 +321,8 @@ if [[ "$response" != "y" && "$response" != "Y" ]]; then
 fi
 echo -e "${GREEN}${CHECKMARK} Congrats on earning the Apprentice role!${NC}"
 
-# Step 8: Display Validator Registration Command
-print_header "Step 8: Register as Validator (Try Later)"
+# Step 8: Display Validator and Node Restart Commands
+print_header "Step 8: Register as Validator and Node Restart Commands"
 echo -e "${YELLOW}${STAR} Important: If you see 'Error: ValidatorQuotaFilledUntil', the validator quota is full. Wait a few hours or try tomorrow.${NC}"
 echo -e "${PURPLE}Below is the command to register as a validator:${NC}"
 echo -e "\n${YELLOW}aztec add-l1-validator \\"
@@ -333,6 +333,14 @@ echo -e "  --proposer-eoa $PUBLIC_ADDRESS \\"
 echo -e "  --staking-asset-handler 0xF739D03e98e23A7B65940848aBA8921fF3bAc4b2 \\"
 echo -e "  --l1-chain-id 11155111${NC}"
 echo -e "\n${YELLOW}${STAR} Save this command and run it later when the validator quota is available.${NC}"
-echo -e "${GREEN}${CHECKMARK} Setup complete! Your node is running. Check it with: ${YELLOW}screen -r aztec${NC}"
+echo -e "\n${PURPLE}Use this command to restart the Sequencer Node if needed:${NC}"
+echo -e "\n${YELLOW}aztec start --node --archiver --sequencer \\"
+echo -e "  --network alpha-testnet \\"
+echo -e "  --l1-rpc-urls $RPC_URL \\"
+echo -e "  --l1-consensus-host-urls $BEACON_URL \\"
+echo -e "  --sequencer.validatorPrivateKey $PRIVATE_KEY \\"
+echo -e "  --sequencer.coinbase $PUBLIC_ADDRESS \\"
+echo -e "  --p2p.p2pIp $SERVER_IP${NC}"
+echo -e "\n${GREEN}${CHECKMARK} Setup complete! Your node is running. Check it with: ${YELLOW}screen -r aztec${NC}"
 echo -e "${BLUE}Stay updated: ${YELLOW}https://x.com/0xCrypton_${NC}"
 exit 0
