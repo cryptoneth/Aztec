@@ -109,6 +109,12 @@ aztec add-l1-validator \
 ```
 Replace `RPC_URL`, `your-validator-address` & 2x `your-validator-address`, then proceed
 
+
+##Update your node :
+
+```
+aztec-up alpha-testnet
+```
 ---
 
 # Error: `ERROR: world-state:block_stream Error processing block stream: Error: Obtained L1 to L2 messages failed to be hashed to the block inHash`
