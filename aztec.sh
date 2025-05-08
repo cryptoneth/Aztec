@@ -75,8 +75,6 @@ echo -e "${NC}"
 print_header "Step 1: Follow Crypton on Twitter"
 echo -e "${PURPLE}${STAR} Show some love and follow me on Twitter for updates and support:${NC}"
 echo -e "${YELLOW}https://x.com/0xCrypton_${NC}"
-echo -e "${PURPLE}This keeps you in the loop with the Aztec community and latest news!${NC}"
-echo -e "${YELLOW}Have you followed @0xCrypton_ on Twitter? (y/n):${NC}"
 read -r response
 if [[ "$response" != "y" && "$response" != "Y" ]]; then
     echo -e "${RED}${CROSS} Please follow the Twitter account and try again.${NC}"
