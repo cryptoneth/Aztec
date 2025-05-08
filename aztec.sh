@@ -71,17 +71,6 @@ _________                        __
 EOF
 echo -e "${NC}"
 
-# Step 1: Follow Crypton on Twitter
-print_header "Step 1: Follow Crypton on Twitter"
-echo -e "${PURPLE}${STAR} Show some love and follow me on Twitter for updates and support:${NC}"
-echo -e "${YELLOW}https://x.com/0xCrypton_${NC}"
-read -r response
-if [[ "$response" != "y" && "$response" != "Y" && "$response" != "n" && "$response" != "N" ]]; then
-    echo -e "${RED}${CROSS} Please enter 'y' or 'n'.${NC}"
-    exit 1
-fi
-echo -e "${GREEN}${CHECKMARK} Thanks you!${NC}"
-
 # Step 2: Install Dependencies (with checks)
 print_header "Step 2: Install Dependencies"
 echo -e "${BLUE}Checking for required dependencies...${NC}"
